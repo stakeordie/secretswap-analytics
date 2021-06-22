@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+:root{
+  --default-page-background:linear-gradient(180deg, #FFFFFF 0%, #F8EC99 180.99%);
+  --default-sidebar-background:#ffffff;
+  --default-color-neutral-01:#1B1B1B;
+  --default-color-neutral-02:#F9FAFA;
+  --default-color-neutral-03:#5F5F6B;
+  --default-color-neutral-04:#FF726E;
+  --font-family:'poppins',Arial, Helvetica, sans-serif;
+}
+code {
+  font-family: var(--font-family);
+}
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import './components/Sidebar.scss';
+@import './layouts/DefaultLayout.scss';

@@ -1,0 +1,6 @@
+.default-layout{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+    background: var(--default-page-background);
+}
