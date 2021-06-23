@@ -2,6 +2,9 @@
     width: 250px;
     height: 100vh;
     background: var(--default-sidebar-background);
+    position: sticky;
+    left: 0;
+    top: 0;
     .icon-container{
         height: 80px;
         width: 100%;
