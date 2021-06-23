@@ -1,0 +1,36 @@
+.container{
+    margin: 50px 0;
+}
+.table-cotainer{
+    background-color: var(--default-color-neutral-02);
+    border: 1px solid var(--default-color-neutral-05);
+    border-radius: 10px;
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        td{
+            padding: 0 8px; 
+            height: 56px;
+            text-align: end;
+            &[data-align-start=true]{
+                text-align: start;
+            }
+        }
+        tr{
+            border-bottom:1px solid var(--default-color-neutral-05) ;
+        }
+        thead{
+            color: var(--default-color-neutral-03);
+            font-weight: 600;
+        }
+        .index{
+            padding: 0 1rem 0 5px;
+        }
+    }
+}
+.highlight{
+    color: var(--default-color-neutral-04);
+}
+// .align-start{
+//     text-align: start;
+// }

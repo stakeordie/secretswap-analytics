@@ -3,7 +3,8 @@ import secretswap_logo from '../../assets/secret-swap.svg';
 const Sidebar = ()=>{
     
     const path = window?.location?.pathname;
-    let cls_overview,cls_tokens,cls_pairs = '';
+    let cls_overview,cls_tokens= '';
+    // let cls_pairs  =''
 
 
     if(path === '/overview'){
@@ -12,9 +13,9 @@ const Sidebar = ()=>{
     if(path === '/tokens'){
         cls_tokens='active';
     }
-    if(path === '/pairs'){
-        cls_pairs='active';
-    }
+    // if(path === '/pairs'){
+    //     cls_pairs='active';
+    // }
 
     return(
         <aside className='sidebar'>
@@ -26,9 +27,9 @@ const Sidebar = ()=>{
                 <li className={cls_tokens}>
                     <Link to='/tokens'>Tokens</Link>
                 </li>
-                <li className={cls_pairs}>
+                {/* <li className={cls_pairs}>
                     <Link to='/pairs'>Pairs</Link>
-                </li>
+                </li> */}
             </ul>
         </aside>
     ) 
