@@ -1,7 +1,8 @@
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import DefaultLayout from "./layouts/DefaultLayout";
 import Overview from "./pages/Overview";
@@ -17,6 +18,9 @@ function App() {
           <Route exact path='/overview' component={Overview}/>
           <Route exact path='/tokens' component={Tokens}/>
           {/* <Route exact path='/pairs' component={Pairs}/> */}
+          <Route exact path='/'>
+            <Redirect to="/overview" />
+          </Route>
         </DefaultLayout>
       </Switch>
     </Router>
